@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a471bestgroup.buddyapp.ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout6">
+
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Home"
+            android:textColor="@color/colorPrimaryDarkText"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/schedule_button"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule"/>
+
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"/>
+
+        <Button
+            android:id="@+id/friends_button"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Name" />
+
+    <ScrollView
+        android:id="@+id/profileView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_out_button"
+        android:layout_below="@+id/tvName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvRegEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="5dp"
+                android:text="Registered Events" />
+
+            <HorizontalScrollView
+                android:id="@+id/regView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_below="@id/tvRegEvents"
+
+                android:layout_margin="5dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/regLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvUpcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/regView"
+                android:layout_marginTop="5dp"
+                android:text="Upcoming Events" />
+
+            <HorizontalScrollView
+                android:id="@+id/upcomingView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_alignParentEnd="true"
+
+                android:layout_below="@id/tvUpcoming"
+
+                android:layout_margin="5dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/upcomingLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvMyEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/upcomingView"
+                android:layout_marginTop="5dp"
+                android:text="My Events" />
+
+            <HorizontalScrollView
+                android:id="@+id/myEventsView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_alignParentEnd="true"
+
+                android:layout_below="@id/tvMyEvents"
+
+                android:layout_margin="5dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/myEventsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_weight="1"
+        android:textSize="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_above="@+id/linearLayout6"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

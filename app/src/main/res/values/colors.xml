@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#52B2CF</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#FFFF00</color>
+    <color name="colorPrimaryDarkText">#FFFFFF</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="statusBarColor">#222222</color>
+    <color name="colorPrimaryLight">#EAEAEA</color>
+    <color name="colorPrimaryLightText">#424242</color>
+
+
+</resources>
